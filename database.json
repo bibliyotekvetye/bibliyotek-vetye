@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Gouverneurs de la Ros\u00e9e",
+    "author": "Jacques Roumain",
+    "category": "Litt\u00e9rature",
+    "format": "PDF",
+    "file": "/docs/gouverneurs.pdf"
+  },
+  {
+    "id": 2,
+    "title": "M\u00e9moire sur l'\u00e9conomie d'Ha\u00efti",
+    "author": "\u00c9tudiant UEH",
+    "category": "Documents universitaires",
+    "format": "DOCX",
+    "file": "/docs/memoire.docx"
+  },
+  {
+    "id": 3,
+    "title": "Introduction \u00e0 la sociologie",
+    "author": "Jean Price-Mars",
+    "category": "Sciences Humaines",
+    "format": "EPUB",
+    "file": "/docs/sociologie.epub"
+  }
+]

@@ -1,3 +1,3 @@
-# Bibliyotèk Vètyè
+# Bibliyotèk Vètyè - Version test
 
-Structure initiale du projet.
+Projet de démonstration pour déploiement.
