@@ -1,70 +1,50 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bibliyotèk Vètyè — Test</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliyotèk Vètyè</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #002f6c;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #d80000;
+    }
+    .btn {
+      display: inline-block;
+      background: #d80000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background: #b30000;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <img src="logo.png" alt="Logo" class="logo"/>
-      <div class="brand-text">
-        <h1>Bibliyotèk Vètyè</h1>
-        <p class="slogan">Ansanm nou pi fò, li pou w lib, li pou yon lòt Ayiti ✊</p>
-      </div>
-    </div>
+  <header>
+    <h1>Bibliyotèk Vètyè</h1>
+    <p>Ansanm nou pi fò, li pou w lib, li pou yon lòt Ayiti</p>
   </header>
 
-  <main class="container">
-    <section class="welcome">
-      <h2>Byenvini nan Bibliyotèk Vètyè</h2>
-      <p>Sa a se yon vèsyon tès. W ap jwenn kèk dokiman demontstrasyon anba.</p>
-    </section>
-
-    <section id="books" class="books">
-      <h3>Premiers livres</h3>
-      <div id="booksList">Chargement des livres...</div>
-    </section>
-
-    <section id="upload" class="upload">
-      <h3>Ajouter un document (test local)</h3>
-      <p>Cette interface ne sauvegarde pas encore côté serveur — fonctionnalité démo.</p>
-      <form id="dummyUpload">
-        <input type="text" id="title" placeholder="Titre" required/>
-        <input type="text" id="author" placeholder="Auteur" required/>
-        <select id="format"><option>PDF</option><option>DOCX</option><option>EPUB</option></select>
-        <button type="submit">Ajouter (local)</button>
-      </form>
-    </section>
+  <main>
+    <h2>Bienvenue !</h2>
+    <p>Ceci est la version testable de votre bibliothèque en ligne.</p>
+    <a href="#" class="btn">Commencer</a>
   </main>
-
-  <footer class="site-footer">
-    <p>© Bibliyotèk Vètyè 2025</p>
-  </footer>
-
-<script>
-async function loadBooks(){
-  const el = document.getElementById('booksList');
-  try{
-    const res = await fetch('/api/books');
-    const data = await res.json();
-    if(!Array.isArray(data)) return el.innerText='Aucun livre.';
-    el.innerHTML = data.map(b=>`<div class="book"><strong>${b.title}</strong> — ${b.author} <em>(${b.format})</em> <a href="${b.file}" download>Télécharger</a></div>`).join('');
-  }catch(e){
-    el.innerText='Erreur de chargement.';
-  }
-}
-document.getElementById('dummyUpload').addEventListener('submit', (e)=>{
-  e.preventDefault();
-  const t=document.getElementById('title').value, a=document.getElementById('author').value, f=document.getElementById('format').value;
-  const el=document.getElementById('booksList');
-  const html = `<div class="book"><strong>${t}</strong> — ${a} <em>(${f})</em></div>`;
-  el.insertAdjacentHTML('beforeend', html);
-});
-loadBooks();
-</script>
 </body>
-</html>
+  </html>
