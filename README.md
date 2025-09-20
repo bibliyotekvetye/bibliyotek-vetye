@@ -1,2 +1,3 @@
-# bibliyotek-vetye
-Code source de la bibliothèque en ligne Bibliyotèk Vètyè
+# Bibliyotèk Vètyè
+
+Structure initiale du projet.
