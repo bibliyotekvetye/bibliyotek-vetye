@@ -1,0 +1,10 @@
+
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#222;margin:0}
+.site-header{background:linear-gradient(90deg,#0b3b70,#c8102e);color:#fff;padding:12px 20px;display:flex;align-items:center}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64px;background:#fff;border-radius:8px;object-fit:cover}
+.container{max-width:960px;margin:20px auto;padding:0 16px}
+.welcome{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.books{margin-top:18px}
+.book{background:#fff;padding:10px;margin-bottom:8px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+.site-footer{text-align:center;padding:12px;margin-top:20px;color:#666}
