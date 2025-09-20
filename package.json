@@ -1,0 +1,13 @@
+{
+  "name": "bibliyotek-vetye",
+  "version": "1.0.0",
+  "description": "Version testable de Bibliyot\u00e8k V\u00e8ty\u00e8 - demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"no build step for static demo\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
